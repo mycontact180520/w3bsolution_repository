@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AddUpdateBookingsActivity">
+
+    <item
+            android:id="@+id/logged_new_product_input"
+            android:icon="@drawable/ic_add_black_24dp"
+            android:title="Nuevo producto"
+            app:showAsAction="always"
+    />
+
+    <item
+            android:id="@+id/logged_chart_input"
+            android:icon="@drawable/add_shopping_cart_dark_24dp"
+            android:title="Carrito"
+            app:showAsAction="always"
+    />
+
+    <item
+        android:id="@+id/logged_search_input"
+        android:icon="@drawable/search_black_24dp"
+        android:title="Buscar"
+        app:showAsAction="always"
+        />
+
+</menu>

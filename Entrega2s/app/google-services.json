@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "372593153612",
+    "firebase_url": "https://entrega2s-678f9.firebaseio.com",
+    "project_id": "entrega2s-678f9",
+    "storage_bucket": "entrega2s-678f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372593153612:android:8f8a221ccc333532",
+        "android_client_info": {
+          "package_name": "com.w3bsolution.entrega2s"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372593153612-cvqt831k51gp0f832bjoi9g7q2b2hupv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.w3bsolution.entrega2s",
+            "certificate_hash": "74201491d9e12e6087cb2b58c96065553e9fc838"
+          }
+        },
+        {
+          "client_id": "372593153612-onrridhgfu3ldjg464lnb4f8bk65l3m6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDq9Mh7tJePcupUe2XX5dIZaD_hCqXjdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "372593153612-onrridhgfu3ldjg464lnb4f8bk65l3m6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

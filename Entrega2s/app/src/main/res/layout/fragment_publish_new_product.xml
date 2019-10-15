@@ -1,0 +1,176 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/white"
+             tools:context="com.w3bsolution.entrega2s.PublishNewProductFragment"
+>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+    >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:isScrollContainer="true">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nuevo producto"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/main"
+            />
+
+            <android.support.design.widget.TextInputEditText
+                    android:id="@+id/product_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:enabled="true"
+                    android:hint="Título del producto"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textSize="16dp"/>
+
+            <Spinner
+                    android:id="@+id/product_categories"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"></Spinner>
+
+
+            <android.support.design.widget.TextInputEditText
+                    android:id="@+id/product_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:enabled="true"
+                    android:hint="Precio del producto"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textSize="16dp"/>
+
+
+            <Spinner
+                    android:id="@+id/product_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:textColorHint="#777"></Spinner>
+
+            <android.support.design.widget.TextInputEditText
+                    android:id="@+id/product_warranty"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:enabled="true"
+                    android:hint="Garantía del producto"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textSize="16dp"/>
+
+            <Spinner
+                    android:id="@+id/product_conditions"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:isScrollContainer="true"></Spinner>
+
+
+            <android.support.design.widget.TextInputEditText
+                    android:id="@+id/product_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:enabled="true"
+                    android:hint="Descripción del producto"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textSize="16dp"/>
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Fotos del producto"
+                    android:textAlignment="center"
+                    android:textSize="26dp"
+                    android:textColor="@color/main"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Usted puede asignar 2 fotos por producto."
+                    android:textAlignment="center"
+                    android:textColor="@color/main"
+                    android:textSize="16dp"/>
+
+            <FrameLayout android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="10dp"
+            >
+                <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/ic_add_a_photo_black_24dp"
+                        android:cropToPadding="true"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="60dp"
+                        android:id="@+id/product_image_one"
+                />
+
+                <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/ic_add_a_photo_black_24dp"
+                        android:cropToPadding="true"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="60dp"
+                        android:id="@+id/product_image_two"/>
+            </FrameLayout>
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp">
+                <Button
+                        android:id="@+id/cancel_new_product_button"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:text="Cancelar"
+                        android:layout_gravity="left"
+                        android:textColor="@color/white"
+                        android:background="@drawable/orange_border_radius"
+                />
+
+                <Button
+                        android:id="@+id/save_new_product_button"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:text="Guardar"
+                        android:textColor="@color/white"
+                        android:background="@drawable/orange_border_radius"/>
+            </FrameLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

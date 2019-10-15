@@ -1,0 +1,129 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#D8999999"
+             android:paddingLeft="5dp"
+             android:paddingRight="5dp"
+             android:paddingTop="5dp"
+             android:paddingBottom="5dp"
+             tools:context="com.w3bsolution.entrega2s.FullProductListFragment">
+
+    <ScrollView
+            android:id="@+id/unregister_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:id="@+id/first_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_radius"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+                <Button
+                        android:id="@+id/first_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/orange_border_radius"
+                        android:text="Crear una cuenta gratis"
+                        android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <!--<RelativeLayout
+                android:id="@+id/second_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/first_relative"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_radius"
+                android:gravity="center_horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/second"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Oferta del día"
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/day_offer_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/second"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/p5" />
+
+                <TextView
+                    android:id="@+id/day_offer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/day_offer_photo"
+                    android:layout_marginTop="10dp"
+                    android:text="Nombre del producto aquí"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/day_offer_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/day_offer_name"
+                    android:layout_marginTop="10dp"
+                    android:text="50 000 CUC"
+                    android:textColor="@color/main" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/day_offer_price"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/orange_border_radius"
+                    android:text="Ver todas las ofertas"
+                    android:textColor="@color/white" />
+            </RelativeLayout>-->
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/first_relative"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border_radius"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/third_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Productos publicados"
+                        android:textColor="#000"
+                        android:textSize="18dp"/>
+
+                <GridView android:layout_width="match_parent"
+                          android:layout_height="fill_parent"
+                          android:numColumns="2"
+                          android:gravity="center"
+                          android:columnWidth="100dp"
+                          android:id="@+id/all_products_grid_view"
+                          android:layout_below="@+id/third_text"
+                          android:clickable="true"
+                          android:verticalSpacing="20dp"
+                          android:horizontalSpacing="10dp"
+                ></GridView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

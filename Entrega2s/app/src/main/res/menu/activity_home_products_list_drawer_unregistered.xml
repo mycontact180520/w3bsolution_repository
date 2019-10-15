@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/published_products_menu"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/client_atention_menu"
+            android:title="Atencion al cliente" />
+        <item android:id="@+id/terms_and_polices_menu"
+            android:title="Términos y condiciones"/>
+
+    </group>
+
+    <item android:title="Opciones de búsqueda">
+        <menu>
+            <group android:menuCategory="secondary">
+                <item
+                    android:id="@+id/search_by_categorie"
+                    android:title="Ver por categorías"
+                    />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Opciones de ususario">
+        <menu>
+            <group android:menuCategory="alternative">
+                <item
+                    android:id="@+id/unregister_register_user"
+                    android:title="Registrarse" />
+                <item
+                    android:id="@+id/unregister_login_user"
+                    android:title="Iniciar sesión" />
+                <item
+                    android:id="@+id/go_out"
+                    android:title="Salir de la aplicación" />
+
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

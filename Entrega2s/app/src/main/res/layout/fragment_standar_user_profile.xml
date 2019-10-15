@@ -1,0 +1,399 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:padding="16dp"
+    tools:context="com.w3bsolution.entrega2s.StandardUserProfileFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/user_profile_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/fa_camera_user_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                android:drawableRight="@drawable/add_a_photo_white_24dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/logged_user_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre de usuario."
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/logged_user_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border_radius"
+                    android:gravity="center"
+                    android:text="28.5 pts"
+                    android:textColor="#000"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="General"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_radius"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:clickable="false">
+                <!--First information section-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:id="@+id/personal_data_linearLayout">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/border_radius"
+                        android:orientation="horizontal"
+                        android:clickable="false">
+
+                        <TextView
+                            android:id="@+id/logged_user_personal_details_fa_one"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="left|center"
+                            android:gravity="center"
+                            android:text="@string/fa_user"
+                            android:textColor="#000"
+                            android:textSize="18dp"
+                            android:clickable="false"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Datos personales"
+                            android:textColor="#000"
+                            android:textSize="18dp"
+                            android:clickable="false"/>
+
+                        <TextView
+                            android:id="@+id/fa_angle_one"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|end|center"
+                            android:layout_marginRight="30dp"
+                            android:gravity="center"
+                            android:text="@string/fa_angle_right"
+                            android:textAlignment="viewEnd"
+                            android:textColor="#000"
+                            android:textSize="18dp"
+                            android:clickable="false"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--Second information section-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:id="@+id/card_details_LinearLayout"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/border_radius"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/logged_user_personal_details_fa_two"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="left|center"
+                            android:gravity="center"
+                            android:text="@string/fa_card"
+                            android:textColor="#000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Detalles tarjeta"
+                            android:textColor="#000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/fa_angle_two"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|end|center"
+                            android:layout_marginRight="30dp"
+                            android:gravity="center"
+                            android:text="@string/fa_angle_right"
+                            android:textAlignment="viewEnd"
+                            android:textColor="#000"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Third information section-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:id="@+id/user_products_LinearLayout">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/border_radius"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/logged_user_personal_details_fa_three"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="left|center"
+                            android:gravity="center"
+                            android:text="@string/fa_money"
+                            android:textColor="#000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Mis productos"
+                            android:textColor="#000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/fa_angle_three"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|end|center"
+                            android:layout_marginRight="30dp"
+                            android:gravity="center"
+                            android:text="@string/fa_angle_right"
+                            android:textAlignment="viewEnd"
+                            android:textColor="#000"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="Otros"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textIsSelectable="true"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_radius"
+                android:orientation="vertical">
+                <!--First information section-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:id="@+id/user_password_LinearLayout"
+                    android:clickable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/border_radius"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/logged_user_personal_details_fa_section_one"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="left|center"
+                            android:gravity="center"
+                            android:text="@string/fa_key"
+                            android:textColor="#000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Contraseña"
+                            android:textColor="#000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/fa_angle_section_one"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|end|center"
+                            android:layout_marginRight="30dp"
+                            android:gravity="center"
+                            android:text="@string/fa_angle_right"
+                            android:textAlignment="viewEnd"
+                            android:textColor="#000"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--Second information section-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:id="@+id/user_log_out_LinearLayout">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/border_radius"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/logged_user_personal_details_fa_section_two"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="left|center"
+                            android:gravity="center"
+                            android:text="@string/fa_logout"
+                            android:textColor="#000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Cerrar sesión"
+                            android:textColor="#000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/fa_angle_section_two"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|end|center"
+                            android:layout_marginRight="30dp"
+                            android:gravity="center"
+                            android:text="@string/fa_angle_right"
+                            android:textAlignment="viewEnd"
+                            android:textColor="#000"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:text="Regresar"
+                    android:background="@drawable/border_radius"
+                    android:layout_gravity="left"
+                    android:padding="10dp"
+                    android:id="@+id/cancel_user_profile_update"/>
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:text="Actualizar"
+                    android:background="@drawable/border_radius"
+                    android:layout_gravity="right"
+                    android:padding="10dp"
+                    android:id="@+id/save_user_profile_update"/>
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

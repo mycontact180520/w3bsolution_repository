@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res-auto">
+
+   <!-- <item
+        android:id="@+id/search_input"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Buscar"
+        android:showAsAction="always"/>-->
+
+    <item android:id="@+id/newproduct"
+        android1:title="Nuevo producto"
+        android1:showAsAction="never"
+        android:title="Nuevo producto"/>
+
+</menu>

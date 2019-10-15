@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#333"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context="com.w3bsolution.entrega2s.StartActivity">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="top|center">
+        <ImageView
+            android:id="@+id/slideimg"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/asset3"
+            android:foregroundGravity="top"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:foregroundGravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/slideimg"
+            android:layout_gravity="center"
+            android:text="Bienvenido"
+            android:textColor="#fff"
+            android:textSize="34dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"/>
+
+        <Button
+            android:id="@+id/go_to_store"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_radius"
+            android:padding="10dp"
+            android:text="Ir a la tienda"
+            android:textColor="@color/main"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/autenticar_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_radius"
+            android:padding="10dp"
+            android:text="Iniciar sesión"
+            android:textColor="@color/main"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_radius"
+            android:padding="10dp"
+            android:text="Registrarse"
+            android:textColor="@color/main"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="@string/w3bsolution"
+            android:textColor="#fff"
+            android:id="@+id/home_link"
+            />
+    </FrameLayout>
+
+</LinearLayout>

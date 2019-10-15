@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/main"
+    tools:context="com.w3bsolution.entrega2s.StartActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/logo_section">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main"
+           />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_section"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:foregroundGravity="right"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hola Mario"
+            android:textSize="26dp"
+            android:textColor="#fff"
+            android:layout_gravity="right"
+            android:id="@+id/welcome_signature"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buenas tardes"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:layout_gravity="right"
+            android:id="@+id/welcome_status_time"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp">
+
+
+        <Button
+            android:id="@+id/go_to_store"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_radius"
+            android:padding="10dp"
+            android:text="Entrar a la tienda"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/autenticar_button"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_radius"
+                android:padding="10dp"
+                android:text="Iniciar sesión"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+
+                />
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_radius"
+                android:padding="10dp"
+                android:text="Registrarse"
+                android:textColor="#000"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

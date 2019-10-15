@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">ENTREGA2S</string>
+    <array name="roles">
+        <item>Vendedor</item>
+        <item>Comprador</item>
+    </array>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_seller_profile">SellerProfileActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="w3bsolution">Desarrollado por
+        <a href="http://www.w3bsolution.com">W3BSolution</a>
+    </string>
+    <string name="title_activity_home_products_list">HomeProductsListActivity</string>
+
+    <array name="product_status">
+        <item>Publicado</item>
+        <item>Borrador</item>
+    </array>
+
+    <array name="product_state_array">
+        <item>Nuevo</item>
+        <item>1 mes de uso</item>
+        <item>3 meses de uso</item>
+        <item>6 meses de uso</item>
+        <item>1 año de uso</item>
+        <item>Más de 1 año de uso</item>
+    </array>
+
+    <!--fonts start here-->
+
+    <string name="fa_search">&#xf002;</string>
+    <string name="fa_save">&#xf0c7;</string>
+    <string name="fa_eraser">&#xf12d;</string>
+    <string name="fa_home">&#xf015;</string>
+    <string name="fa_book">&#xf02d;</string>
+    <string name="fa_dollar">&#xf155;</string>
+    <string name="fa_cogs">&#xf085;</string>
+    <string name="fa_out">&#xf08b;</string>
+    <string name="fa_camera">&#xf030;</string>
+    <string name="fa_user">&#xf007;</string>
+    <string name="fa_angle_right">&#xf105;</string>
+    <string name="fa_card">&#xf1f1;</string>
+    <string name="fa_money">&#xf0d6;</string>
+    <string name="fa_key">&#xf084;</string>
+    <string name="fa_logout">&#xf023;</string>
+    <string name="fa_step_forward">&#xf03a;</string>
+
+</resources>
